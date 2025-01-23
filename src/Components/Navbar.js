@@ -14,30 +14,21 @@ const NavbarPage = async () => {
     <div className="bg-lime-500 px-8">
       <nav className="container lili mx-auto text-white">
         <div>
-          <h1 className="px-4 py-2 rounded-lg font-semibold border">WEB DEV</h1>
+          <h1 className="padding">WEB DEV</h1>
         </div>
         <div className="lili-gap">
-          <Link className="px-4 py-2 rounded-lg font-semibold border" href="/">
+          <Link className="padding" href="/">
             Home
           </Link>
-          <Link
-            className="px-4 py-2 rounded-lg font-semibold border"
-            href="/about"
-          >
+          <Link className="padding" href="/about">
             About
           </Link>
 
-          <Link
-            className="px-4 py-2 rounded-lg font-semibold border"
-            href="/contact"
-          >
+          <Link className="padding" href="/contact">
             Contact US
           </Link>
 
-          <Link
-            className="px-4 py-2 rounded-lg font-semibold border"
-            href="/profile"
-          >
+          <Link className="padding" href="/profile">
             Profile
           </Link>
         </div>
@@ -45,28 +36,19 @@ const NavbarPage = async () => {
           {user ? (
             <>
               <Link href="/dashboard">
-                <button className="px-4 py-2 rounded-lg font-semibold border">
-                  Dashboard
-                </button>
+                <button className="padding">Dashboard</button>
               </Link>
               <LogoutLink>
-                <button className="px-4 py-2 rounded-lg font-semibold border">
-                  Log Out
-                </button>
+                <button className="padding">Log Out</button>
               </LogoutLink>
             </>
           ) : (
             <>
               <LoginLink postLoginRedirectURL="/profile">
-                <button className="px-4 py-2 rounded-lg font-semibold border">
-                  Login
-                </button>
+                <button className="padding">Login</button>
               </LoginLink>
               <RegisterLink postLoginRedirectURL="/profile">
-                <button
-                  className="px-4 py-2 rounded-lg font-semibold border"
-                  href=""
-                >
+                <button className="padding" href="">
                   Register
                 </button>
               </RegisterLink>
