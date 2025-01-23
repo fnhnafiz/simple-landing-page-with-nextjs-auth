@@ -1,11 +1,9 @@
 import Link from "next/link";
 
 const BlogDetails = async ({ params }) => {
-  // const id = postId;
-  // console.log(id);
-  const res = await fetch(
-    `https://jsonplaceholder.typicode.com/posts/${params.id}`
-  );
+  const { id } = await params;
+  // console.log("sdfgsodgsdjf", id);
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
   const posts = await res.json();
   // console.log(posts);
   return (
