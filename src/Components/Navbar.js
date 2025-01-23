@@ -12,11 +12,11 @@ const NavbarPage = async () => {
   // console.log(user);
   return (
     <div className="bg-lime-500 px-8">
-      <nav className="container lili mx-auto  text-white">
+      <nav className="container lili mx-auto text-white">
         <div>
           <h1 className="px-4 py-2 rounded-lg font-semibold border">WEB DEV</h1>
         </div>
-        <div className="space-x-4">
+        <div className="lili-gap">
           <Link className="px-4 py-2 rounded-lg font-semibold border" href="/">
             Home
           </Link>
@@ -41,7 +41,7 @@ const NavbarPage = async () => {
             Profile
           </Link>
         </div>
-        <div className="space-x-4">
+        <div className="lili-gap">
           {user ? (
             <>
               <Link href="/dashboard">
